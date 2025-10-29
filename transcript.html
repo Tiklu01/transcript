@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Transcript</title>
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 8mm;
+            }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            padding: 8px;
+            max-width: 210mm;
+            margin: 0 auto;
+            font-size: 6pt;
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: 11pt;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        
+        .main-table {
+            width: 100%;
+            border: 2px solid #000;
+            border-collapse: collapse;
+        }
+        
+        .main-table td {
+            border: 1px solid #000;
+            padding: 2px 4px;
+            font-size: 6.5pt;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            width: 30%;
+        }
+        
+        .semester-box {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+        
+        .semester-box th,
+        .semester-box td {
+            border: 1px solid #000;
+            padding: 1.5px 2px;
+            font-size: 5.5pt;
+            text-align: center;
+        }
+        
+        .semester-box th {
+            background-color: #d0d0d0;
+            font-weight: bold;
+            font-size: 5pt;
+            padding: 2px 1px;
+        }
+        
+        .course-name {
+            text-align: left;
+            padding-left: 3px;
+        }
+        
+        .semester-title {
+            background-color: #b0b0b0;
+            font-weight: bold;
+            padding: 3px;
+            text-align: center;
+            font-size: 6pt;
+        }
+        
+        .summary-row {
+            background-color: #e8e8e8;
+            font-weight: bold;
+            font-size: 5.5pt;
+        }
+        
+        .year-summary {
+            background-color: #d0d0d0;
+            font-weight: bold;
+            font-size: 6pt;
+            text-align: center;
+            padding: 3px;
+        }
+        
+        .sem-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+        
+        .sem-cell {
+            border: 1px solid #000;
+            padding: 0;
+        }
+        
+        .grade-legend {
+            margin-top: 5px;
+            font-size: 5.5pt;
+        }
+        
+        .grade-legend table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #000;
+        }
+        
+        .grade-legend th,
+        .grade-legend td {
+            border: 1px solid #000;
+            padding: 2px;
+            text-align: center;
+        }
+        
+        .grade-legend th {
+            background-color: #d0d0d0;
+            font-weight: bold;
+        }
+        
+        .footer-text {
+            margin-top: 4px;
+            font-size: 5.5pt;
+            line-height: 1.3;
+        }
+        
+        .signatures {
+            margin-top: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .sig-line {
+            width: 45%;
+            text-align: center;
+            font-size: 6pt;
+        }
+        
+        .final-summary {
+            background-color: #c0c0c0;
+            font-weight: bold;
+            font-size: 6.5pt;
+            text-align: center;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h2>TRANSCRIPT</h2>
+
+    <table class="main-table">
+        <tr>
+            <td class="info-label">Name:</td>
+            <td colspan="3">NANDALAL DAS</td>
+        </tr>
+        <tr>
+            <td class="info-label">University Registration Number:</td>
+            <td>221430110075</td>
+            <td class="info-label">Duration of Program:</td>
+            <td><strong>4 Years</strong></td>
+        </tr>
+        <tr>
+            <td class="info-label">College Roll No:</td>
+            <td>500122010187</td>
+            <td class="info-label">Year of Entrance:</td>
+            <td><strong>2022</strong></td>
+        </tr>
+        <tr>
+            <td class="info-label">Medium of Instruction:</td>
+            <td>English</td>
+            <td class="info-label">Year of Completion:</td>
+            <td><strong>2026 (Pursuing)</strong></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: center;"><strong>Program: Bachelor of Technology (B.Tech) in Computer Science and Engineering</strong></td>
+        </tr>
+        <tr>
+            <td colspan="4" style="padding: 0;">
+                <!-- Semester 1 & 2 -->
+                <div class="sem-container">
+                    <div class="sem-cell">
+                        <table class="semester-box">
+                            <tr>
+                                <td colspan="7" class="semester-title">Semester I — Dec 2022</td>
+                            </tr>
+                            <tr>
+                                <th>Sl</th>
+                                <th>Code</th>
+                                <th>Course Title</th>
+                                <th>Grade</th>
+                                <th>Points</th>
+                                <th>Credits</th>
+                                <th>Credit<br>points</th>
+                            </tr>
+                             <tr>
+                                <td>1</td>
+                                <td>HSMC101</td>
+                                <td class="course-name">Professional Communication</td>
+                                <td>A</td>
+                                <td>8</td>
+                                <td>2.0</td>
+                                <td>16.0</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>M101</td>
+                                <td class="course-name">Mathematics-I</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>4.0</td>
+                                <td>36.0</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>PH191</td>
+                                <td class="course-name">Physics-I</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>3.0</td>
+                                <td>30.0</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>ME191</td>
+                                <td class="course-name">Workshop & Manufacturing Practices Lab</td>
+                                <td>A</td>
+                                <td>8</td>
+                                <td>1.5</td>
+                                <td>12.0</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>PH191</td>
+                                <td class="course-name">Physics-I Lab</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>1.5</td>
+                                <td>13.5</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>PR191</td>
+                                <td class="course-name">Theme Based Project-I</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>0.5</td>
+                                <td>5.0</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>PR192</td>
+                                <td class="course-name">Skill Development-I: Soft Skill</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>0.5</td>
+                                <td>4.5</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>MC181</td>
+                                <td class="course-name">Induction Program</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>0.0</td>
+                                <td>0.0</td>
+                            </tr>
+                            <tr class="summary-row">
+                                <td colspan="3">SGPA FIRST YEAR:FIRST(ODD) SEMESTER: 9 </td>
+                                <td colspan="2">Total</td>
+                                <td>13.0</td>
+                                <td>117.0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="sem-cell">
+                        <table class="semester-box">
+                            <tr>
+                                <td colspan="7" class="semester-title">Semester II — Jun 2023</td>
+                            </tr>
+                            <tr>
+                                <th>Sl</th>
+                                <th>Code</th>
+                                <th>Course Title</th>
+                                <th>Grade</th>
+                                <th>Points</th>
+                                <th>Credits</th>
+                                <th>Credit<br>points</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>CH201</td>
+                                <td class="course-name">Chemistry-I</td>
+                                <td>A</td>
+                                <td>8</td>
+                                <td>3.0</td>
+                                <td>24.0</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>CS201</td>
+                                <td class="course-name">Programming For Problem Solving</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>3.0</td>
+                                <td>30.0</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>EE201</td>
+                                <td class="course-name">Basic Electrical Engineering</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>3.0</td>
+                                <td>27.0</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>M201</td>
+                                <td class="course-name">Mathematics-II</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>4.0</td>
+                                <td>40.0</td>
+                            </tr>
+                            
+                            
+                            
+                            <tr>
+                                <td>5</td>
+                                <td>CH291</td>
+                                <td class="course-name">Chemistry-I Lab</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>1.5</td>
+                                <td>13.5</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>CS291</td>
+                                <td class="course-name">Programming For Problem Solving Lab</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.5</td>
+                                <td>15.0</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>EE291</td>
+                                <td class="course-name">Basic Electrical Engineering Lab</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.5</td>
+                                <td>15.0</td>
+                            </tr>
+                             <tr>
+                                <td>8</td>
+                                <td>HSMC291</td>
+                                <td class="course-name">Professional Communication Lab</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.0</td>
+                                <td>10.0</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>ME292</td>
+                                <td class="course-name">Engineering Graphics & Design Lab</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.5</td>
+                                <td>15.0</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>MC281</td>
+                                <td class="course-name">NSS / Physical Activities / Meditation & Yoga / Photography</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>0.0</td>
+                                <td>0.0</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>PR291</td>
+                                <td class="course-name">Theme Based Project-II</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>0.5</td>
+                                <td>4.5</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>PR292</td>
+                                <td class="course-name">Skill Development-II: Life Skill</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>0.5</td>
+                                <td>4.5</td>
+                            </tr>
+                            <tr class="summary-row">
+                                <td colspan="3">SGPA FIRST YEAR:SECOND(EVEN) SEMESTER: 9.45</td>
+                                <td colspan="2">Total</td>
+                                <td>21.0</td>
+                                <td>198.5</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td class="year-summary" style="border: 1px solid #000;">First Year — Total Credits: 34 | YGPA: 9.28</td>
+                    </tr>
+                </table>
+                
+                <!-- Semester 3 & 4 -->
+                <div class="sem-container">
+                    <div class="sem-cell">
+                        <table class="semester-box">
+                            <tr>
+                                <td colspan="7" class="semester-title">Semester III — Dec 2023</td>
+                            </tr>
+                            <tr>
+                                <th>Sl</th>
+                                <th>Code</th>
+                                <th>Course Title</th>
+                                <th>Grade</th>
+                                <th>Points</th>
+                                <th>Credits</th>
+                                <th>Credit<br>points</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>CS301</td>
+                                <td class="course-name">IT Workshop (Scilab/Matlab/C++)</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>3.0</td>
+                                <td>27.0</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>CS302</td>
+                                <td class="course-name">Data Structures</td>
+                                <td>A</td>
+                                <td>8</td>
+                                <td>3.0</td>
+                                <td>24.0</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>ESC301</td>
+                                <td class="course-name">Analog Electronics</td>
+                                <td>A</td>
+                                <td>8</td>
+                                <td>3.0</td>
+                                <td>24.0</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>ESC302</td>
+                                <td class="course-name">Digital Logic And Electronics</td>
+                                <td>B</td>
+                                <td>7</td>
+                                <td>3.0</td>
+                                <td>21.0</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>HSMC303</td>
+                                <td class="course-name">Universal Human Values 2: Understanding Harmony</td>
+                                <td>A</td>
+                                <td>8</td>
+                                <td>3.0</td>
+                                <td>24.0</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>M(CSE)301</td>
+                                <td class="course-name">Discrete Mathematics</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>3.0</td>
+                                <td>27.0</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>CS391</td>
+                                <td class="course-name">IT Workshop Lab (Scilab/Matlab/C++)</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>1.5</td>
+                                <td>13.5</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>CS392</td>
+                                <td class="course-name">Data Structures Lab</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.5</td>
+                                <td>15.0</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>ESC391</td>
+                                <td class="course-name">Digital And Analog Electronics Lab</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.5</td>
+                                <td>15.0</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>M(CS)391</td>
+                                <td class="course-name">Numerical Methods Lab</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.5</td>
+                                <td>15.0</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>PR391</td>
+                                <td class="course-name">Theme Based Project-III</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>0.5</td>
+                                <td>5.0</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>PR392</td>
+                                <td class="course-name">Skill Development-III: Technical Seminar Presentation</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>0.5</td>
+                                <td>5.0</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>MC301</td>
+                                <td class="course-name">Environmental Science</td>
+                                <td>B</td>
+                                <td>7</td>
+                                <td>0.0</td>
+                                <td>0.0</td>
+                            </tr>
+                            <tr class="summary-row">
+                                <td colspan="3">SGPA SECOND YEAR:THIRD(ODD) SEMESTER: 8.67</td>
+                                <td colspan="2">Total</td>
+                                <td>26.0</td>
+                                <td>225.5</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="sem-cell">
+                        <table class="semester-box">
+                            <tr>
+                                <td colspan="7" class="semester-title">Semester IV — Jun 2024</td>
+                            </tr>
+                            <tr>
+                                <th>Sl</th>
+                                <th>Code</th>
+                                <th>Course Title</th>
+                                <th>Grade</th>
+                                <th>Points</th>
+                                <th>Credits</th>
+                                <th>Credit<br>points</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>CS401</td>
+                                <td class="course-name">Computer Organization And Architecture</td>
+                                <td>A</td>
+                                <td>8</td>
+                                <td>3.0</td>
+                                <td>24.0</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>CS402</td>
+                                <td class="course-name">Design And Analysis Of Algorithms</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>3.0</td>
+                                <td>27.0</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>CS403</td>
+                                <td class="course-name">Operating Systems</td>
+                                <td>B</td>
+                                <td>7</td>
+                                <td>3.0</td>
+                                <td>21.0</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>CS404</td>
+                                <td class="course-name">Formal Language And Automata Theory</td>
+                                <td>A</td>
+                                <td>8</td>
+                                <td>3.0</td>
+                                <td>24.0</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>HSMC402</td>
+                                <td class="course-name">Gender Culture And Development</td>
+                                <td>A</td>
+                                <td>8</td>
+                                <td>2.0</td>
+                                <td>16.0</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>M(CSE)401</td>
+                                <td class="course-name">Probability And Statistics</td>
+                                <td>A</td>
+                                <td>8</td>
+                                <td>3.0</td>
+                                <td>24.0</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>CS491</td>
+                                <td class="course-name">Computer Organization And Architecture Lab</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.5</td>
+                                <td>15.0</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>CS492</td>
+                                <td class="course-name">Design And Analysis Of Algorithms Lab</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.5</td>
+                                <td>15.0</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>CS493</td>
+                                <td class="course-name">Operating Systems Lab</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.5</td>
+                                <td>15.0</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>ESC491</td>
+                                <td class="course-name">Programming Using Python</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.5</td>
+                                <td>15.0</td>
+                            </tr>
+                              <tr>
+                                <td>11</td>
+                                <td>PR491</td>
+                                <td class="course-name">Theme Based Project-IV</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>0.5</td>
+                                <td>5.0</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>PR492</td>
+                                <td class="course-name">Skill Development-IV: Soft Skill And Aptitude-I</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>0.5</td>
+                                <td>5.0</td>
+                            </tr>
+                             <tr>
+                                <td>13</td>
+                                <td>MC481</td>
+                                <td class="course-name">Learning An Art Form / Environmental Protection Initiatives</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>0.0</td>
+                                <td>0.0</td>
+                            </tr>
+                            <tr class="summary-row">
+                                <td colspan="3">SGPA SECOND YEAR:FOURTH(EVEN) SEMESTER: 8.58</td>
+                                <td colspan="2">Total</td>
+                                <td>24.0</td>
+                                <td>206.0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td class="year-summary" style="border: 1px solid #000;">Second Year — Total Credits: 50 | YGPA: 8.63</td>
+                    </tr>
+                </table>
+                
+                <!-- Semester 5 & 6 -->
+                <div class="sem-container">
+                    <div class="sem-cell">
+                        <table class="semester-box">
+                            <tr>
+                                <td colspan="7" class="semester-title">Semester V — Dec 2024</td>
+                            </tr>
+                            <tr>
+                                <th>Sl</th>
+                                <th>Code</th>
+                                <th>Course Title</th>
+                                <th>Grade</th>
+                                <th>Points</th>
+                                <th>Credits</th>
+                                <th>Credit<br>points</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>CS501</td>
+                                <td class="course-name">Compiler Design</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>3.0</td>
+                                <td>27.0</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>CS502</td>
+                                <td class="course-name">Database Management Systems</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>3.0</td>
+                                <td>27.0</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>CS503</td>
+                                <td class="course-name">Object Oriented Programming Using Java</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>3.0</td>
+                                <td>30.0</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>CS504D</td>
+                                <td class="course-name">Artificial Intelligence</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>3.0</td>
+                                <td>27.0</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>HSMC505</td>
+                                <td class="course-name">Principles Of Management</td>
+                                <td>B</td>
+                                <td>7</td>
+                                <td>2.0</td>
+                                <td>14.0</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>CS591</td>
+                                <td class="course-name">Compiler Design Lab</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.5</td>
+                                <td>15.0</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>CS592</td>
+                                <td class="course-name">Database Management Systems Lab</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.5</td>
+                                <td>15.0</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>CS593</td>
+                                <td class="course-name">Object Oriented Prog Using Java Lab</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>1.5</td>
+                                <td>13.5</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>CS594D</td>
+                                <td class="course-name">Artificial Intelligence Lab</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.5</td>
+                                <td>15.0</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>PR591</td>
+                                <td class="course-name">Minor Project-I</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>1.0</td>
+                                <td>9.0</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>PR592</td>
+                                <td class="course-name">Skill Development V: Soft Skill And Aptitude-II</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>0.5</td>
+                                <td>5.0</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>MC501</td>
+                                <td class="course-name">Constitution Of India</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>0.0</td>
+                                <td>0.0</td>
+                            </tr>
+                            
+                            <tr class="summary-row">
+                                <td colspan="3">SGPA THIRD YEAR:FIFTH(ODD) SEMESTER: 9.19</td>
+                                <td colspan="2">Total</td>
+                                <td>21.5</td>
+                                <td>197.5</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="sem-cell">
+                        <table class="semester-box">
+                            <tr>
+                                <td colspan="7" class="semester-title">Semester VI — Jun 2025</td>
+                            </tr>
+                            <tr>
+                                <th>Sl</th>
+                                <th>Code</th>
+                                <th>Course Title</th>
+                                <th>Grade</th>
+                                <th>Points</th>
+                                <th>Credits</th>
+                                <th>Credit<br>points</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>CS601</td>
+                                <td class="course-name">Computer Networks</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>3.0</td>
+                                <td>27.0</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>CS602</td>
+                                <td class="course-name">Software Engineering</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>3.0</td>
+                                <td>27.0</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>CS603C</td>
+                                <td class="course-name">Machine Learning</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>3.0</td>
+                                <td>27.0</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>CS604C</td>
+                                <td class="course-name">Soft Computing</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>3.0</td>
+                                <td>27.0</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>CS605A</td>
+                                <td class="course-name">Introduction To Internet Of Things</td>
+                                <td>E</td>
+                                <td>9</td>
+                                <td>3.0</td>
+                                <td>27.0</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>HSMC604</td>
+                                <td class="course-name">Economics For Engineers</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>2.0</td>
+                                <td>20.0</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>CS691</td>
+                                <td class="course-name">Computer Networks Lab</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.5</td>
+                                <td>15.0</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>CS692</td>
+                                <td class="course-name">Software Engineering Lab</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.5</td>
+                                <td>15.0</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>CS693C</td>
+                                <td class="course-name">Machine Learning Lab</td>
+                                <td>A</td>
+                                <td>8</td>
+                                <td>1.5</td>
+                                <td>12.0</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>MC601</td>
+                                <td class="course-name">Intellectual Property Right</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>0.0</td>
+                                <td>0.0</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>PR691</td>
+                                <td class="course-name">Minor Project-II</td>
+                                <td>O</td>
+                                <td>10</td>
+                                <td>1.0</td>
+                                <td>10.0</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>PR692</td>
+                                <td class="course-name">Skill Development-VI: Soft Skill And Aptitude-III</td>
+                                <td>A</td>
+                                <td>8</td>
+                                <td>0.5</td>
+                                <td>4.0</td>
+                            </tr>
+                            <tr class="summary-row">
+                                <td colspan="3">SGPA THIRD YEAR:SIXTH(EVEN) SEMESTER: 9.17</td>
+                                <td colspan="2">Total</td>
+                                <td>23.0</td>
+                                <td>211.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td class="year-summary" style="border: 1px solid #000;">Third Year — Total Credits: 44.5 | YGPA: 9.18</td>
+                    </tr>
+                </table>
+                
+                <!-- Semester 7 & 8
+                <div class="sem-container">
+                    <div class="sem-cell">
+                        <table class="semester-box">
+                            <tr>
+                                <td colspan="7" class="semester-title">Semester VII — Dec 2025</td>
+                            </tr>
+                            <tr>
+                                <th>Sl</th>
+                                <th>Code</th>
+                                <th>Course Title</th>
+                                <th>Grade</th>
+                                <th>Points</th>
+                                <th>Credits</th>
+                                <th>Credit<br>points</th>
+                            </tr>
+                            <tr class="summary-row">
+                                <td colspan="3">Total</td>
+                                <td colspan="2">SGPA</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="sem-cell">
+                        <table class="semester-box">
+                            <tr>
+                                <td colspan="7" class="semester-title">Semester VIII — Jun 2026</td>
+                            </tr>
+                            <tr>
+                                <th>Sl</th>
+                                <th>Code</th>
+                                <th>Course Title</th>
+                                <th>Grade</th>
+                                <th>Points</th>
+                                <th>Credits</th>
+                                <th>Credit<br>points</th>
+                            </tr>
+                            <tr class="summary-row">
+                                <td colspan="3">Total</td>
+                                <td colspan="2">SGPA</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td class="year-summary" style="border: 1px solid #000;">Fourth Year — Total Credits: - | YGPA: -</td>
+                    </tr>
+                </table> -->
+                
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td class="final-summary" style="border: 1px solid #000;">Cumulative Performance — Total Credits Completed: 141 | CGPA: 8.79</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <div class="grade-legend">
+        <table>
+            <tr>
+                <th colspan="11">Grade Legend</th>
+            </tr>
+            <tr>
+                <th>Grade</th>
+                <th>O</th>
+                <th>E</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>P</th>
+                <th>F</th>
+                <th>Ab</th>
+                <th>I</th>
+            </tr>
+            <tr>
+                <td><strong>Point</strong></td>
+                <td>10</td>
+                <td>9</td>
+                <td>8</td>
+                <td>7</td>
+                <td>6</td>
+                <td>5</td>
+                <td>4</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer-text">
+        <p><strong>Note:</strong> SGPA = Semester Grade Point Average | YGPA = Yearly Grade Point Average | CGPA = Cumulative Grade Point Average</p>
+
+    <div class="signatures">
+        <div class="sig-line">
+            <p>_______________________</p>
+            <p>Date of Issue</p>
+        </div>
+        <div class="sig-line">
+            <p>_______________________</p>
+            <p>Registar's office</p>
+        </div>
+    </div>
+</body>
+</html>
