@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNIT Transcript</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        body {
+            margin: 0;
+            padding: 10mm; /* Adjust padding for print margins */
+            font-family: "Times New Roman", Times, serif;
+            font-size: 9px; /* Small font to fit everything */
+            box-sizing: border-box;
+            width: 210mm;
+            height: 297mm;
+        }
+        
+        /* Layout Containers */
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Space */
+        .header-space {
+            height: 35mm; /* Space for Letterhead/Logo */
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header-text {
+            position: absolute;
+            bottom: 5px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        h2 {
+            margin: 2px 0;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .transcript-title {
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 5px;
+            display: block;
+        }
+
+        /* Student Info Table */
+        .student-info {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .student-info td {
+            border: 1px solid black;
+            padding: 2px 4px;
+        }
+        .label {
+            width: 50px;
+        }
+
+        /* Main Content Grid */
+        .semester-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+
+        .column {
+            width: 49.5%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /* Semester Tables */
+        .semester-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8px;
+            margin-bottom: 2px;
+        }
+
+        .semester-table th, .semester-table td {
+            border: 1px solid black;
+            padding: 1px 2px;
+            text-align: center;
+        }
+
+        .semester-table th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+
+        .semester-table td.subject-name {
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 120px;
+        }
+
+        .semester-table .total-row td {
+            font-weight: bold;
+            border-top: 2px solid black;
+        }
+
+        .semester-table .result-row td {
+            font-weight: bold;
+            text-align: left;
+            background-color: #e0e0e0;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            height: 40px;
+        }
+
+        .signature-block {
+            text-align: center;
+            width: 200px;
+        }
+        
+        .signature-line {
+            border-top: 1px solid black;
+            margin-top: 20px;
+            padding-top: 2px;
+            font-weight: bold;
+        }
+
+        /* Utility */
+        .text-left { text-align: left !important; }
+        .text-right { text-align: right !important; }
+        .no-border { border: none !important; }
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header Space -->
+    <div class="header-space">
+        <!-- Placeholder for Logo/Letterhead content if needed -->
+        <div class="header-text">
+            <h1>GURU NANAK INSTITUTE OF TECHNOLOGY</h1>
+            <h2>An Autonomous Institute</h2>
+            <h2>under Maulana Abul Kalam Azad University of Technology, West Bengal</h2>
+            <h2>(formerly known as West Bengal University of Technology)</h2>
+            <span class="transcript-title">TRANSCRIPT</span>
+        </div>
+    </div>
+
+    <!-- Student Info -->
+    <table class="student-info">
+        <tr>
+            <td class="label">Name</td>
+            <td>NEHA PAL</td>
+            <td class="label">Roll No.</td>
+            <td>500418021027</td>
+        </tr>
+        <tr>
+            <td class="label">Course</td>
+            <td>B.Tech - INFORMATION TECHNOLOGY</td>
+            <td class="label">Reg. No.</td>
+            <td>181430110149 of 2018-2019</td>
+        </tr>
+    </table>
+
+    <!-- Main Grid -->
+    <div class="semester-grid">
+        <!-- Left Column -->
+        <div class="column">
+            
+            <!-- Semester 1 -->
+            <table class="semester-table">
+                <thead>
+                    <tr>
+                        <th style="width: 30px;">Subject Code</th>
+                        <th>Subject Offered</th>
+                        <th style="width: 15px;">Grade</th>
+                        <th style="width: 15px;">(P)oints</th>
+                        <th style="width: 15px;">(C)redits</th>
+                        <th style="width: 25px;">Credit Points (P*C)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>EC101</td><td class="subject-name">BASIC ELECTRONICS ENGINEERING</td><td>E</td><td>9</td><td>3.0</td><td>27.0</td></tr>
+                    <tr><td>HU101</td><td class="subject-name">ENGLISH</td><td>O</td><td>10</td><td>2.0</td><td>20.0</td></tr>
+                    <tr><td>M101</td><td class="subject-name">MATHEMATICS - I</td><td>D</td><td>5</td><td>4.0</td><td>20.0</td></tr>
+                    <tr><td>PH101</td><td class="subject-name">PHYSICS - I</td><td>D</td><td>5</td><td>3.0</td><td>15.0</td></tr>
+                    <tr><td>EC191</td><td class="subject-name">BASIC ELECTRONICS ENGINEERING LAB</td><td>A</td><td>8</td><td>1.5</td><td>12.0</td></tr>
+                    <tr><td>ME192</td><td class="subject-name">WORKSHOP/MANUFACTURING PRACTICES</td><td>A</td><td>8</td><td>1.5</td><td>12.0</td></tr>
+                    <tr><td>PH191</td><td class="subject-name">PHYSICS - I LAB</td><td>E</td><td>9</td><td>1.5</td><td>13.5</td></tr>
+                    <tr><td>EC191</td><td class="subject-name">BASIC ELECTRONICS PROJECT</td><td>E</td><td>9</td><td>0.5</td><td>4.5</td></tr>
+                    <tr><td>M191</td><td class="subject-name">MATHEMATICS - I PROJECT</td><td>E</td><td>9</td><td>0.5</td><td>4.5</td></tr>
+                    <tr><td>MC181</td><td class="subject-name">INDUCTION PROGRAM</td><td>O</td><td>10</td><td>0.0</td><td>0.0</td></tr>
+                    <tr class="total-row">
+                        <td colspan="4" class="text-right">Total</td>
+                        <td>17.5</td>
+                        <td>118.5</td>
+                    </tr>
+                    <tr class="result-row">
+                        <td colspan="6">PASSED: 2022 &nbsp;&nbsp; SGPA1: 6.77</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Semester 3 -->
+            <table class="semester-table">
+                <thead>
+                    <tr>
+                        <th style="width: 30px;">Subject Code</th>
+                        <th>Subject Offered</th>
+                        <th style="width: 15px;">Grade</th>
+                        <th style="width: 15px;">(P)oints</th>
+                        <th style="width: 15px;">(C)redits</th>
+                        <th style="width: 25px;">Credit Points (P*C)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>IT301</td><td class="subject-name">DATA STRUCTURE AND ALGORITHM</td><td>A</td><td>8</td><td>3.0</td><td>24.0</td></tr>
+                    <tr><td>IT302</td><td class="subject-name">ANALOG AND DIGITAL ELECTRONICS</td><td>D</td><td>5</td><td>3.0</td><td>15.0</td></tr>
+                    <tr><td>M(IT)301</td><td class="subject-name">MATHEMATICS - III</td><td>D</td><td>5</td><td>4.0</td><td>20.0</td></tr>
+                    <tr><td>M(IT)302</td><td class="subject-name">NUMERICAL METHODS AND STATISTICS</td><td>B</td><td>7</td><td>3.0</td><td>21.0</td></tr>
+                    <tr><td>PH301</td><td class="subject-name">PHYSICS-II</td><td>C</td><td>6</td><td>3.0</td><td>18.0</td></tr>
+                    <tr><td>IT391</td><td class="subject-name">DATA STRUCTURE LAB</td><td>E</td><td>9</td><td>1.5</td><td>13.5</td></tr>
+                    <tr><td>IT392</td><td class="subject-name">ANALOG AND DIGITAL ELECTRONICS LAB</td><td>A</td><td>8</td><td>1.5</td><td>12.0</td></tr>
+                    <tr><td>M(IT)392</td><td class="subject-name">NUMERICAL METHODS AND STATISTICS LAB</td><td>A</td><td>8</td><td>1.5</td><td>12.0</td></tr>
+                    <tr><td>PH391</td><td class="subject-name">PHYSICS-II LAB</td><td>A</td><td>8</td><td>1.5</td><td>12.0</td></tr>
+                    <tr><td>PR391</td><td class="subject-name">PROJECT-III</td><td>E</td><td>9</td><td>1.0</td><td>9.0</td></tr>
+                    <tr><td>PR392</td><td class="subject-name">INNOVATIVE ACTIVITIES II</td><td>E</td><td>9</td><td>0.5</td><td>4.5</td></tr>
+                    <tr><td>MC381</td><td class="subject-name">BEHAVIOURAL & INTERPERSONAL SKILLS</td><td>E</td><td>9</td><td>0.0</td><td>0.0</td></tr>
+                    <tr class="total-row">
+                        <td colspan="4" class="text-right">Total</td>
+                        <td>23.5</td>
+                        <td>156.5</td>
+                    </tr>
+                    <tr class="result-row">
+                        <td colspan="6">PASSED: 2021 &nbsp;&nbsp; SGPA3: 6.66</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Semester 5 -->
+            <table class="semester-table">
+                <thead>
+                    <tr>
+                        <th style="width: 30px;">Subject Code</th>
+                        <th>Subject Offered</th>
+                        <th style="width: 15px;">Grade</th>
+                        <th style="width: 15px;">(P)oints</th>
+                        <th style="width: 15px;">(C)redits</th>
+                        <th style="width: 25px;">Credit Points (P*C)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>HU503</td><td class="subject-name">INDUSTRIAL & FINANCIAL MANAGEMENT</td><td>B</td><td>7</td><td>2.0</td><td>14.0</td></tr>
+                    <tr><td>IT501</td><td class="subject-name">DESIGN & ANALYSIS OF ALGORITHM</td><td>A</td><td>8</td><td>3.0</td><td>24.0</td></tr>
+                    <tr><td>IT502</td><td class="subject-name">SOFTWARE ENGINEERING</td><td>A</td><td>8</td><td>3.0</td><td>24.0</td></tr>
+                    <tr><td>IT503</td><td class="subject-name">OPERATING SYSTEM</td><td>A</td><td>8</td><td>3.0</td><td>24.0</td></tr>
+                    <tr><td>IT504A</td><td class="subject-name">PROGRAMMING PRACTICE WITH C++</td><td>E</td><td>9</td><td>3.0</td><td>27.0</td></tr>
+                    <tr><td>IT591</td><td class="subject-name">ALGORITHM LAB</td><td>A</td><td>8</td><td>1.5</td><td>12.0</td></tr>
+                    <tr><td>IT592</td><td class="subject-name">SOFTWARE ENGINEERING LAB</td><td>E</td><td>9</td><td>1.5</td><td>13.5</td></tr>
+                    <tr><td>IT593</td><td class="subject-name">OPERATING SYSTEM LAB</td><td>E</td><td>9</td><td>1.5</td><td>13.5</td></tr>
+                    <tr><td>IT594A</td><td class="subject-name">PROGRAMMING PRACTICE WITH C++ LAB</td><td>E</td><td>9</td><td>1.5</td><td>13.5</td></tr>
+                    <tr><td>MC501</td><td class="subject-name">CONSTITUTION OF INDIA</td><td>A</td><td>8</td><td>0.0</td><td>0.0</td></tr>
+                    <tr><td>PR591</td><td class="subject-name">PROJECT-V</td><td>E</td><td>9</td><td>1.0</td><td>9.0</td></tr>
+                    <tr><td>PR592</td><td class="subject-name">INNOVATIVE ACTIVITIES-IV</td><td>E</td><td>9</td><td>0.5</td><td>4.5</td></tr>
+                    <tr class="total-row">
+                        <td colspan="4" class="text-right">Total</td>
+                        <td>21.5</td>
+                        <td>179.0</td>
+                    </tr>
+                    <tr class="result-row">
+                        <td colspan="6">PASSED: 2021 &nbsp;&nbsp; SGPA5: 8.33</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Semester 7 -->
+            <table class="semester-table">
+                <thead>
+                    <tr>
+                        <th style="width: 30px;">Subject Code</th>
+                        <th>Subject Offered</th>
+                        <th style="width: 15px;">Grade</th>
+                        <th style="width: 15px;">(P)oints</th>
+                        <th style="width: 15px;">(C)redits</th>
+                        <th style="width: 25px;">Credit Points (P*C)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>IT701D</td><td class="subject-name">MACHINE LEARNING</td><td>E</td><td>9</td><td>3.0</td><td>27.0</td></tr>
+                    <tr><td>IT702A</td><td class="subject-name">CRYPTOGRAPHY AND NETWORK SECURITY</td><td>E</td><td>9</td><td>3.0</td><td>27.0</td></tr>
+                    <tr><td>IT703B</td><td class="subject-name">PATTERN RECOGNITION</td><td>E</td><td>9</td><td>3.0</td><td>27.0</td></tr>
+                    <tr><td>IT704C</td><td class="subject-name">MOBILE COMMUNICATION</td><td>E</td><td>9</td><td>3.0</td><td>27.0</td></tr>
+                    <tr><td>IT791D</td><td class="subject-name">MACHINE LEARNING USING R PROGRAMMING LAB</td><td>O</td><td>10</td><td>1.5</td><td>15.0</td></tr>
+                    <tr><td>MC781</td><td class="subject-name">SEMINAR/GD/PRESENTATION SKILL/ FOREIGN LANGUAGE</td><td>E</td><td>9</td><td>0.0</td><td>0.0</td></tr>
+                    <tr><td>PR791</td><td class="subject-name">PROJECT - VII</td><td>A</td><td>8</td><td>4.5</td><td>36.0</td></tr>
+                    <tr><td>PR792</td><td class="subject-name">INNOVATIVE ACTIVITIES - VI</td><td>E</td><td>9</td><td>0.5</td><td>4.5</td></tr>
+                    <tr class="total-row">
+                        <td colspan="4" class="text-right">Total</td>
+                        <td>18.5</td><td>163.5</td>
+                    </tr>
+                    <tr class="result-row">
+                        <td colspan="6">PASSED: 2022 &nbsp;&nbsp; SGPA7: 8.84</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- Right Column -->
+        <div class="column">
+            
+            <!-- Semester 2 -->
+            <table class="semester-table">
+                <thead>
+                    <tr>
+                        <th style="width: 30px;">Subject Code</th>
+                        <th>Subject Offered</th>
+                        <th style="width: 15px;">Grade</th>
+                        <th style="width: 15px;">(P)oints</th>
+                        <th style="width: 15px;">(C)redits</th>
+                        <th style="width: 25px;">Credit Points (P*C)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>CH201</td><td class="subject-name">CHEMISTRY - I</td><td>C</td><td>6</td><td>3.0</td><td>18.0</td></tr>
+                    <tr><td>CS201</td><td class="subject-name">PROGRAMMING FOR PROBLEM SOLVING</td><td>D</td><td>5</td><td>3.0</td><td>15.0</td></tr>
+                    <tr><td>EE201</td><td class="subject-name">BASIC ELECTRICAL ENGINEERING</td><td>D</td><td>5</td><td>3.0</td><td>15.0</td></tr>
+                    <tr><td>M201</td><td class="subject-name">MATHEMATICS - II</td><td>D</td><td>5</td><td>4.0</td><td>20.0</td></tr>
+                    <tr><td>ME201</td><td class="subject-name">ENGINEERING MECHANICS</td><td>C</td><td>6</td><td>3.0</td><td>18.0</td></tr>
+                    <tr><td>CH291</td><td class="subject-name">CHEMISTRY - I LAB</td><td>A</td><td>8</td><td>1.5</td><td>12.0</td></tr>
+                    <tr><td>CS291</td><td class="subject-name">PROGRAMMING FOR PROBLEM SOLVING LAB</td><td>O</td><td>10</td><td>1.5</td><td>15.0</td></tr>
+                    <tr><td>EE291</td><td class="subject-name">BASIC ELECTRICAL ENGINEERING LAB</td><td>B</td><td>7</td><td>1.5</td><td>10.5</td></tr>
+                    <tr><td>HU291</td><td class="subject-name">LANGUAGE LAB AND SEMINAR PRESENTATION</td><td>A</td><td>8</td><td>1.0</td><td>8.0</td></tr>
+                    <tr><td>M291</td><td class="subject-name">MATHEMATICS - II PROJECT</td><td>C</td><td>6</td><td>0.5</td><td>3.0</td></tr>
+                    <tr><td>ME291</td><td class="subject-name">ENGINEERING GRAPHICS & DESIGN</td><td>E</td><td>9</td><td>1.5</td><td>13.5</td></tr>
+                    <tr><td>XC281</td><td class="subject-name">EXTRA CURRICULAR ACTIVITY II</td><td>O</td><td>10</td><td>0.0</td><td>0.0</td></tr>
+                    <tr class="total-row">
+                        <td colspan="4" class="text-right">Total</td>
+                        <td>24.0</td>
+                        <td>151.5</td>
+                    </tr>
+                    <tr class="result-row">
+                        <td colspan="6">PASSED: 2019 &nbsp;&nbsp; SGPA2: 6.31 &nbsp;&nbsp; YGPA1: 6.51</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Semester 4 -->
+            <table class="semester-table">
+                <thead>
+                    <tr>
+                        <th style="width: 30px;">Subject Code</th>
+                        <th>Subject Offered</th>
+                        <th style="width: 15px;">Grade</th>
+                        <th style="width: 15px;">(P)oints</th>
+                        <th style="width: 15px;">(C)redits</th>
+                        <th style="width: 25px;">Credit Points (P*C)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>HU401</td><td class="subject-name">VALUES AND ETHICS IN POFESSION</td><td>E</td><td>9</td><td>2.0</td><td>18.0</td></tr>
+                    <tr><td>IT401</td><td class="subject-name">COMPUTER ORGANIZATION & ARCHITECTURE</td><td>E</td><td>9</td><td>3.0</td><td>27.0</td></tr>
+                    <tr><td>IT402</td><td class="subject-name">OBJECT ORIENTED PROGRAMMING USING JAVA</td><td>O</td><td>10</td><td>3.0</td><td>30.0</td></tr>
+                    <tr><td>IT403</td><td class="subject-name">FORMAL LANGUAGE AND AUTOMATA</td><td>E</td><td>9</td><td>3.0</td><td>27.0</td></tr>
+                    <tr><td>IT404</td><td class="subject-name">COMMUNICATION ENGINEERING & CODING THEORY</td><td>E</td><td>9</td><td>3.0</td><td>27.0</td></tr>
+                    <tr><td>IT491</td><td class="subject-name">COMPUTER ORGANIZATION & ARCHITECTURE LAB</td><td>E</td><td>9</td><td>1.5</td><td>13.5</td></tr>
+                    <tr><td>IT492</td><td class="subject-name">OBJECT ORIENTED PROGRAMMING LAB</td><td>E</td><td>9</td><td>1.5</td><td>13.5</td></tr>
+                    <tr><td>IT493</td><td class="subject-name">PROGRAMMING SKILL DEVELOPMENT LAB</td><td>O</td><td>10</td><td>1.5</td><td>15.0</td></tr>
+                    <tr><td>PR491</td><td class="subject-name">PROJECT-IV</td><td>O</td><td>10</td><td>1.0</td><td>9.0</td></tr>
+                    <tr><td>PR492</td><td class="subject-name">INNOVATIVE ACTIVITIES-II</td><td>O</td><td>10</td><td>0.5</td><td>5.0</td></tr>
+                    <tr><td>MC401</td><td class="subject-name">ENVIRONMENTAL SCIENCE</td><td>O</td><td>10</td><td>0.0</td><td>0.0</td></tr>
+                    <tr class="total-row">
+                        <td colspan="4" class="text-right">Total</td>
+                        <td>20.0</td>
+                        <td>185.0</td>
+                    </tr>
+                    <tr class="result-row">
+                        <td colspan="6">PASSED: 2020 &nbsp;&nbsp; SGPA4: 9.25 &nbsp;&nbsp; YGPA2: 7.85</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Semester 6 -->
+            <table class="semester-table">
+                <thead>
+                    <tr>
+                        <th style="width: 30px;">Subject Code</th>
+                        <th>Subject Offered</th>
+                        <th style="width: 15px;">Grade</th>
+                        <th style="width: 15px;">(P)oints</th>
+                        <th style="width: 15px;">(C)redits</th>
+                        <th style="width: 25px;">Credit Points (P*C)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>IT601</td><td class="subject-name">DATABASE MANAGEMENT SYSTEM</td><td>A</td><td>8</td><td>3.0</td><td>24.0</td></tr>
+                    <tr><td>IT602</td><td class="subject-name">WEB TECHNOLOGY</td><td>A</td><td>8</td><td>3.0</td><td>24.0</td></tr>
+                    <tr><td>IT603</td><td class="subject-name">COMPUTER NETWORKING</td><td>A</td><td>8</td><td>3.0</td><td>24.0</td></tr>
+                    <tr><td>IT604A</td><td class="subject-name">E-COMMERCE AND ERP</td><td>E</td><td>9</td><td>3.0</td><td>27.0</td></tr>
+                    <tr><td>IT691</td><td class="subject-name">DATABASE SYSTEM LAB</td><td>E</td><td>9</td><td>1.5</td><td>13.5</td></tr>
+                    <tr><td>IT692</td><td class="subject-name">WEB TECHNOLOGY LAB</td><td>E</td><td>9</td><td>1.5</td><td>13.5</td></tr>
+                    <tr><td>IT693</td><td class="subject-name">COMPUTER NETWORKING LAB</td><td>E</td><td>9</td><td>1.5</td><td>13.5</td></tr>
+                    <tr><td>IT694A</td><td class="subject-name">E-COMMERCE AND ERP LAB</td><td>O</td><td>10</td><td>1.5</td><td>15.0</td></tr>
+                    <tr><td>MC681</td><td class="subject-name">TECHNICAL LECTURE PRESENTATION & GROUP DISCUSSION</td><td>O</td><td>10</td><td>0.0</td><td>0.0</td></tr>
+                    <tr><td>PR691</td><td class="subject-name">PROJECT - VI</td><td>E</td><td>9</td><td>1.0</td><td>9.0</td></tr>
+                    <tr><td>PR692</td><td class="subject-name">INNOVATIVE ACTIVITIES - V</td><td>E</td><td>9</td><td>0.5</td><td>4.5</td></tr>
+                    <tr class="total-row">
+                        <td colspan="4" class="text-right">Total</td>
+                        <td>19.5</td>
+                        <td>168.0</td>
+                    </tr>
+                    <tr class="result-row">
+                        <td colspan="6">PASSED: 2021 &nbsp;&nbsp; SGPA6: 8.62 &nbsp;&nbsp; YGPA3: 8.46</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Semester 8 -->
+            <table class="semester-table">
+                <thead>
+                    <tr>
+                        <th style="width: 30px;">Subject Code</th>
+                        <th>Subject Offered</th>
+                        <th style="width: 15px;">Grade</th>
+                        <th style="width: 15px;">(P)oints</th>
+                        <th style="width: 15px;">(C)redits</th>
+                        <th style="width: 25px;">Credit Points (P*C)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>HU804</td><td class="subject-name">PRINCIPLES OF MANAGEMENT</td><td>A</td><td>8</td><td>2.0</td><td>16.0</td></tr>
+                    <tr><td>IT801A</td><td class="subject-name">BLOCK CHAIN TECHNOLOGY</td><td>E</td><td>9</td><td>3.0</td><td>27.0</td></tr>
+                    <tr><td>IT802D</td><td class="subject-name">DEEP LEARNING</td><td>A</td><td>8</td><td>3.0</td><td>24.0</td></tr>
+                    <tr><td>IT803B</td><td class="subject-name">CYBER LAW AND IPR</td><td>E</td><td>9</td><td>3.0</td><td>27.0</td></tr>
+                    <tr><td>MC801</td><td class="subject-name">ESSENCE OF INDIAN KNOWLEDGE TRADITION</td><td>O</td><td>10</td><td>0.0</td><td>0.0</td></tr>
+                    <tr><td>PR891</td><td class="subject-name">PROJECT - VIII</td><td>E</td><td>9</td><td>4.5</td><td>40.5</td></tr>
+                    <tr class="total-row">
+                        <td colspan="4" class="text-right">Total</td>
+                        <td>15.5</td>
+                        <td>134.5</td>
+                    </tr>
+                    <tr class="result-row">
+                        <td colspan="6">PASSED: 2022 &nbsp;&nbsp; SGPA8: 8.68 &nbsp;&nbsp; YGPA4: 8.68 &nbsp;&nbsp; DGPA: 8.01</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="signature-block">
+            <div class="signature-line">Controller of Examinations, GNIT</div>
+        </div>
+        <div class="signature-block">
+            <div class="signature-line">Principal, GNIT</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
